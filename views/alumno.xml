@@ -61,7 +61,7 @@
         <!-- Menú -->
         <menuitem id="menu_root" name="Gestion Estudiantil"/>
         <menuitem id="menu_alumnos" name="Alumnos" parent="menu_root"/>
-        <menuitem id="menu_alumnos_lista" name="Lista alumnos" parent="menu_alumnos" action="alumno_action"/>
+        <menuitem id="menu_alumnos_lista" name="Ver listado de alumnos" parent="menu_alumnos" action="alumno_action"/>
 
     </data>
 </odoo>
