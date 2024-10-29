@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <!-- Vista del listado de inscripciones -->
+        <record id="inscripcion_list_view" model= "ir.ui.view">
+            <field name="name">Listado de inscripciones</field>
+            <field name="model">gestion_estudiantil.inscripcion</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="alumno_id"/>
+                    <field name="programa_id"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Vista del formulario de inscripciones -->
+        <record id="inscripcion_form_view" model= "ir.ui.view">
+            <field name="name">Formulario de inscripciones</field>
+            <field name="model">gestion_estudiantil.inscripcion</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="alumno_id"/>
+                        </group>
+                        <group>
+                            <field name="programa_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record >
+        <!-- Acciones -->
+        <record id="inscripcion_action" model="ir.actions.act_window">
+            <field name="name">Inscripciones</field>
+            <field name="res_model">gestion_estudiantil.inscripcion</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- Menú -->
+        <menuitem id="menu_root" name="Gestion Estudiantil"/>
+        <menuitem id="menu_inscripciones" name="Inscripciones" parent="menu_root"/>
+        <menuitem id="menu_inscripciones_lista" name="Ver listado de inscripciones" parent="menu_inscripciones" action="inscripcion_action"/>
+
+    </data>
+</odoo>

@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_gestion_estudiantil_alumno,gestion_estudiantil.alumno,model_gestion_estudiantil_alumno,base.group_user,1,1,1,1
 access_gestion_estudiantil_programa,gestion_estudiantil.programa,model_gestion_estudiantil_programa,base.group_user,1,1,1,1
+access_gestion_estudiantil_inscripcion,gestion_estudiantil.inscripcion,model_gestion_estudiantil_inscripcion,base.group_user,1,1,1,1
